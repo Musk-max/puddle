@@ -155,6 +155,7 @@ git push -u origin master
 ```
 
 > Note: by merging on web browser you have more option like deleting the branch after merging or not
+> Source:https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally?tool=webui
 
 # Then create the next branch called module_2 by and switch on it to prepare the next module:
 ```
