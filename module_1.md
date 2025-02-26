@@ -89,3 +89,28 @@ python manage.py runserver
 ```
 You should obtain the following page by clicking on the Starting development server url:
 ![result](django_welcome_page.png)
+
+
+Add the files in your new local repository. This stages them for the first commit.
+```
+ git add .
+```
+
+Commit the files that you've staged in your local repository.
+```
+ git commit -m "commit description"
+```
+Send the file on your remote branch called master:
+```
+git push origin master
+```
+
+Then create a branch called module_1 by copying the work already done on it:
+```
+git checkout -b module_1
+````
+Send this branch on the remote:
+```
+git push origin module_1
+```
+>Note : this project each step will have one module and each module will have one branch on the remote
