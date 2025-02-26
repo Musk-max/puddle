@@ -23,3 +23,4 @@ You press i, and you enter insert mode. You can navigate around the text and ins
 
 This will save your commit message.
 >source:https://stackoverflow.com/questions/73012357/please-enter-a-commit-message-for-your-changes
+>Note: I noticed that this error happen when you use git commit whithout adding a message
