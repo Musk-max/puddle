@@ -153,6 +153,12 @@ Step 4 Push the changes.
 git push -u origin master
 
 ```
+step 5 Puis aller sur la branch master et la mettre à jour en local :
+```
+git checkout master
+
+git pull origin master
+```
 
 > Note: by merging on web browser you have more option like deleting the branch after merging or not
 > Source:https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/checking-out-pull-requests-locally?tool=webui
