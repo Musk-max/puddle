@@ -2,7 +2,7 @@
 If your code is stored locally on your computer and is tracked by Git or not tracked by any version control system (VCS), you can import the code to GitHub using GitHub CLI or Git commands.
 
 ##  Initializing a Git repository
-Initialize the local directory as a Git repository. By default, the initial branch is called main.
+Initialize the local directory as a Git repository. By default, the initial branch is called master.
 If you’re using Git 2.28.0 or a later version, you can set the name of the default branch using -b
 ```
 git init -b main
@@ -12,13 +12,13 @@ Pushing an empty repository does'nt work.
 
 Add the files in your new local repository. This stages them for the first commit.
 ```
- $ git add .
+ git add .
 ```
 >Note: To unstage a file, use 'git reset HEAD YOUR-FILE. 'git reset HEAD YOUR-FILE'
 
 Commit the files that you've staged in your local repository.
 ```
-$ git commit -m "First commit"
+ git commit -m "First commit"
 ```
 >Note: To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
 
@@ -37,9 +37,10 @@ git remote -v
 ```
 To push the changes in your local repository to GitHub, run the following command.
 ```
-git push origin main
+git push origin master
 ```
 > Note:If your default branch is not named "main," replace "main" with the name of your default branch.
+>Source : https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github#adding-a-local-repository-to-github-with-github-cli
 
 # Setting up a django project
 
@@ -48,3 +49,43 @@ Create a virtual environment :
 python -m venv venv
 ```
 >Note:In a virtual environment you can install python package(example:django) just for this project
+
+Now activate the virtual environment with the following command.
+```
+# windows machine
+venv\Scripts\activate
+```
+Packages and requirements - Our project will rely on a whole bunch of 3rd party packages (requirements) to function. We will be using a Python package manager to install packages throughout this course. 
+I have already created a requirements.txt file. Check out requirements.txt
+```
+django
+```
+Let's go ahead and install our project requirements. Add the following code to you terminal.
+```
+pip install -r requirements.txt  
+```
+Django - You can now go ahead and create a new Django project. Installing Django has given you access to a handy 'startproject' command. Use the following command to create our new project.
+```
+django-admin startproject puddle
+```
+Let's see inside our django project, we should have two files:
+```
+cd puddle
+ls
+```
+The state of your repository should be :
+```
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        26/02/2025     07:02                puddle
+-a----        26/02/2025     07:02            684 manage.py
+```
+manage.py is a script for runNing adminstrative task such like updating the database structure, managing the developement server...
+puddle is a folder with the same name as the project which contains configurations files
+
+run django server to see if everything is Okay : 
+```
+python manage.py runserver
+```
+You should obtain the following page by clicking on the Starting development server url:
+![result](django_welcome_page.png)
