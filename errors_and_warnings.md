@@ -11,4 +11,16 @@ git config --global core.autocrlf false
 That way, you avoid any automatic transformation, and can still specify them through a .gitattributes file and core.eol directives.
 >source: https://stackoverflow.com/questions/17628305/windows-git-warning-lf-will-be-replaced-by-crlf-is-that-warning-tail-backwar
 
+#   "Please enter a commit message for your changes"
+The first line before
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
 #
+is precisely there for adding your commit message.
+
+You press i, and you enter insert mode. You can navigate around the text and insert what ever you want. When done, press Esc. This makes you exit insert mode. Next you have to press :wq, which means to write and quit.
+
+This will save your commit message.
+>source:https://stackoverflow.com/questions/73012357/please-enter-a-commit-message-for-your-changes
+>Note: I noticed that this error happen when you use git commit whithout adding a message

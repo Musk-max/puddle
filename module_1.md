@@ -44,6 +44,7 @@ git push origin master
 
 # Setting up a django project
 
+
 Create a virtual environment :
 ```
 python -m venv venv
@@ -56,7 +57,7 @@ Now activate the virtual environment with the following command.
 venv\Scripts\activate
 ```
 Packages and requirements - Our project will rely on a whole bunch of 3rd party packages (requirements) to function. We will be using a Python package manager to install packages throughout this course. 
-I have already created a requirements.txt file. Check out requirements.txt
+I have already created a requirements.txt file. Check out requirements.txt:
 ```
 django
 ```
@@ -89,3 +90,52 @@ python manage.py runserver
 ```
 You should obtain the following page by clicking on the Starting development server url:
 ![result](django_welcome_page.png)
+
+
+Add the files in your new local repository. This stages them for the first commit.
+```
+ git add .
+```
+Commit the files that you've staged in your local repository.
+```
+ git commit -m "commit description"
+```
+Send the file on your remote branch called master:
+```
+git push origin master
+```
+Then create a branch called module_1 by copying the work already done on it:
+````
+git checkout -b module_1
+````
+Send this branch on the remote:
+
+```
+git push origin module_1
+```
+
+>Note : this project each step will have one module and each module will have one branch on the remote
+# Fusion d’une demande de tirage
+Fusionnez une demande de tirage (pull request) dans la branche en amont quand le travail est terminé. Toute personne disposant d’un accès en poussée (push) au dépôt peut effectuer la fusion
+## À propos des fusions de demande de 
+Dans une demande de tirage, vous proposez que les modifications que vous avez apportées sur une branche de tête doivent être fusionnées dans une branche de base. Par défaut, toute demande de tirage peut être fusionnée à tout moment, sauf si la branche principale est en conflit avec la branche de base.
+Si la demande de tirage présente des conflits de fusion ou si vous souhaitez tester les modifications avant de fusionner, vous pouvez extraire la demande de tirage localement et la fusionner à l’aide de la ligne de commande.
+Vous ne pouvez pas fusionner un brouillon de demande de tirage. Pour plus d’informations sur les brouillons de demande de tirage, consultez À propos des demandes de tirage (pull requests).
+# Fusion d’une demande de tirage
+1)Under your repository name, click  Pull requests.
+
+2)In the "Pull Requests" list, click the pull request you'd like to merge.
+
+3)Scroll down to the bottom of the pull request. Depending on the merge options enabled for your repository, you can:
+Merge all of the commits into the base branch by clicking Merge pull request. If the Merge pull request option is not shown, click the merge dropdown menu and select Create a merge commit.
+
+4)If prompted, type a commit message, or accept the default message.
+
+5)Click Confirm merge, Confirm squash and merge, or Confirm rebase and merge.
+
+6)Optionally, delete the branch. This keeps the list of branches in your repository tidy.
+
+Then create the next branch called module_2 by and switch on it to prepare the next module:
+```
+git checkout -b module_2
+```
