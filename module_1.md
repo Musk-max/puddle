@@ -124,7 +124,7 @@ Vous ne pouvez pas fusionner un brouillon de demande de tirage. Pour plus d’in
 # Fusion d’une demande de tirage
 1)Under your repository name, click  Pull requests.
 
-2)In the "Pull Requests" list, click the pull request you'd like to merge.
+2)In the "Pull Requests" list, click the pull request you'd like to merge. (or make new pull request and create yours)
 
 3)If prompted, type a commit message, or accept the default message.
 and clik on pull request button
