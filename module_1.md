@@ -138,7 +138,7 @@ Merge all of the commits into the base branch by clicking Merge pull request. If
 # Merging via command line
 Step 1 Clone the repository or update your local repository with the latest changes
 ```
-git pull origin master
+git pull origin branch_name
 ```
 Step 2 Switch to the base branch of the pull request.
 ```
