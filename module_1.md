@@ -114,3 +114,8 @@ Send this branch on the remote:
 git push origin module_1
 ```
 >Note : this project each step will have one module and each module will have one branch on the remote
+
+Then create the next branch called module_2 by and switch on it:
+```
+git checkout -b module_2
+```
