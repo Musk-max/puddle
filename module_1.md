@@ -126,16 +126,38 @@ Vous ne pouvez pas fusionner un brouillon de demande de tirage. Pour plus d’in
 
 2)In the "Pull Requests" list, click the pull request you'd like to merge.
 
-3)Scroll down to the bottom of the pull request. Depending on the merge options enabled for your repository, you can:
-Merge all of the commits into the base branch by clicking Merge pull request. If the Merge pull request option is not shown, click the merge dropdown menu and select Create a merge commit.
+3)If prompted, type a commit message, or accept the default message.
+and clik on pull request button
 
-4)If prompted, type a commit message, or accept the default message.
+4)Scroll down to the bottom of the pull request. Depending on the merge options enabled for your repository, you can:
+Merge all of the commits into the base branch by clicking Merge pull request. If the Merge pull request option is not shown, click the merge dropdown menu and select Create a merge commit.
 
 5)Click Confirm merge, Confirm squash and merge, or Confirm rebase and merge.
 
-6)Optionally, delete the branch. This keeps the list of branches in your repository tidy.
+6)Optionally, delete the branch (manually). This keeps the list of branches in your repository tidy.
+# Merging via command line
+Step 1 Clone the repository or update your local repository with the latest changes
+```
+git pull origin master
+```
+Step 2 Switch to the base branch of the pull request.
+```
+git checkout master
+```
+Step 3 Merge the head branch into the base branch.
+```
+git merge module_1
+```
+Step 4 Push the changes.
+```
+git push -u origin master
 
-Then create the next branch called module_2 by and switch on it to prepare the next module:
+```
+
+> Note: by merging on web browser you have more option like deleting the branch after merging or not
+
+# Then create the next branch called module_2 by and switch on it to prepare the next module:
 ```
 git checkout -b module_2
 ```
+
