@@ -193,3 +193,11 @@ urlpatterns = [
         </div>
 </footer> 
 ```
+# switcher de force sur une branche malgré des erreurs
+```
+git switch -f <branch_name>
+```
+# anuler un merge
+```
+ git merge --quit
+ ```
