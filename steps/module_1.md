@@ -84,7 +84,7 @@ d-----        26/02/2025     07:02                puddle
 manage.py is a script for runNing adminstrative task such like updating the database structure, managing the developement server...
 puddle is a folder with the same name as the project which contains configurations files
 
-run django server to see if everything is Okay : 
+# run django server to see if everything is Okay : 
 ```
 python manage.py runserver
 ```
