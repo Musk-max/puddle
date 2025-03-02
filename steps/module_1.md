@@ -42,6 +42,12 @@ git push origin master
 > Note:If your default branch is not named "main," replace "main" with the name of your default branch.
 >Source : https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github#adding-a-local-repository-to-github-with-github-cli
 
+Don't work first on master automatically create your first branch to write youre first code then merge it to master.
+```
+git branch module_1
+```
+>Note: see #merging via command line  (below)
+
 # Setting up a django project
 
 

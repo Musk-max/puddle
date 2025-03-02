@@ -201,3 +201,6 @@ git switch -f <branch_name>
 ```
  git merge --quit
  ```
+ # après avoir mergé module_2 dans master
+ Et en général chaque module dans master, lancer le server d'application sur master
+  pour voir si l'application fonctionne correctement
